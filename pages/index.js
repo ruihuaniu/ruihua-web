@@ -12,7 +12,7 @@ const Home = () => (
     </Head>
 
   
-   <div><Button>Click Here</Button></div>
+   <Button>Click Here</Button>
 
     
   </div>
