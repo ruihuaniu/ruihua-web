@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 import Header from '../components/header'
 import Banner from '../components/banner'
+import Projects from '../components/projects'
 import {Button} from 'antd'
 
 
@@ -17,13 +18,17 @@ const Home = () => {
     </Head>
     <Header/>
     <Banner/>
+    <div className="vertical-space"></div>
+    <Projects/>
 
-
-
+    {/* <style jsx>
+      {`
+      .vertical-space{
+        padding:30px;
+      }
+      `}
+    </style> */}
   
-  
-
-    
   </div>
   )
 
