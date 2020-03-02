@@ -5,6 +5,7 @@ import Header from '../components/header'
 import Banner from '../components/banner'
 import Projects from '../components/projects'
 import About from '../components/about'
+import Contact from '../components/contact'
 import {Button} from 'antd'
 
 
@@ -24,6 +25,7 @@ const Home = () => {
     <Projects/>
 
     <About/>
+    <Contact/>
 
     {/* <style jsx>
       {`

@@ -10,13 +10,13 @@ const About =()=>{
         <div className="about-container">
            
             <Row gutter={24}>
-               <Col xs={{ span: 24 }} sm={{ span: 5}}>
+               <Col xs={{ span: 24 }} md={{ span: 5}}>
                    <div className="about-left">
                        <p className="about-left-upper">Masters graduate in information technology from Monash University</p>
                        <p className="about-left-lower">I'm Ruihua (Barton) NIU</p>
                     </div>
                </Col>
-               <Col xs={{ span: 24 }} sm={{ span: 19 }}>
+               <Col xs={{ span: 24 }} md={{ span: 19 }}>
                     <div className="about-right">
                         <div className="about-right-upper">A talented information technology professional with several years’ industry experience, an exceptional eye for detail and a drive to further my career within the Software Engineering field. I believe that my technical & soft skills, experience and my passion can help to make a difference with your business</div>
                         <hr/>
@@ -58,7 +58,7 @@ const About =()=>{
                     background-size: cover;
                     background-blend-mode: darken;
                     padding:50px 15px;
-                    height:500px;
+                    min-height:500px;
                     color:#ffffff;
                     text-align:center;
                 }
@@ -87,7 +87,7 @@ const About =()=>{
 
                 .about-right-upper{
                     font-size:16px;
-                    padding-bottom:20px;
+                    padding:20px 10px;
                 }
 
                 .about-right-middle{
