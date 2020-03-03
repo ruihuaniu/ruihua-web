@@ -1,5 +1,8 @@
 # Barton Web Project
 
+---
+
+
 ## Languages & Libraries
  * React / Next.js 
  * D3.js
@@ -8,3 +11,4 @@
  * Node.js / Koa
  * MongoDb
  * Jest
+ * Git

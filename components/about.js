@@ -10,20 +10,20 @@ const About =()=>{
         <div className="about-container">
            
             <Row gutter={24}>
-               <Col xs={{ span: 24 }} md={{ span: 5}}>
+               <Col xs={{ span: 24 }} md={{ span: 5}} >
                    <div className="about-left">
                        <p className="about-left-upper">Masters graduate in information technology from Monash University</p>
                        <p className="about-left-lower">I'm Ruihua (Barton) NIU</p>
                     </div>
                </Col>
-               <Col xs={{ span: 24 }} md={{ span: 19 }}>
+               <Col xs={{ span: 24 }} md={{ span: 19 }} >
                     <div className="about-right">
                         <div className="about-right-upper">A talented information technology professional with several years’ industry experience, an exceptional eye for detail and a drive to further my career within the Software Engineering field. I believe that my technical & soft skills, experience and my passion can help to make a difference with your business</div>
                         <hr/>
                         <div className="about-right-middle">SKILLS</div>
                         <div className="about-right-lower">
                             <Row gutter={24}>
-                            <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                            <Col xs={{ span: 24 }} sm={{ span: 12 }} >
                                 <ul>
                                     <li>HTML, CSS / SCSS, Ant Design</li>
                                     <li>JavaScript / React / Redux</li>
@@ -61,6 +61,7 @@ const About =()=>{
                     min-height:500px;
                     color:#ffffff;
                     text-align:center;
+                    
                 }
 
                 .about-left{
@@ -69,6 +70,7 @@ const About =()=>{
                     font-style:italic;
                     border: 1px solid #ffffff;
                     padding:20px 8px 10px;
+                   
                 }
 
                 .about-left-upper{
@@ -82,12 +84,15 @@ const About =()=>{
 
                 .about-right{
                     color:#ffffff;
-                    text-align:justify;
+                    text-align:center;
+                    // max-width:1000px;
+                   
                 }
 
                 .about-right-upper{
                     font-size:16px;
                     padding:20px 10px;
+                    text-align:justify;
                 }
 
                 .about-right-middle{
@@ -101,6 +106,7 @@ const About =()=>{
                     font-size:14px;
                     border: 3px dotted #ffffff;
                     padding:20px 10px 10px;
+                    text-align:justify;
                 }
 
                 hr{

@@ -8,11 +8,11 @@ const Banner =()=>(
        <Carousel effect="fade" className="banner-container" >
        {/* <Row type="flex" justify="center"> */}
             <div className="banner-button-slide-1">
-            <button className="banner-button">Find out my work</button>
+            <a href="#projects-card" className="banner-button">Find out my work</a>
                 
             </div>
             <div className="banner-button-slide-2">
-            <button className="banner-button">Enjoy the data</button>
+            <a className="banner-button">Enjoy the data</a>
            
             </div>
          
@@ -28,17 +28,19 @@ const Banner =()=>(
                     
                 }
                 div img{
-                    object-fit: contain;
+                    // object-fit: contain;
                 }
 
                 div.banner-button-slide-1{
                     padding-top:300px;
-                    background-image: url("https://www.istockphoto.com/resources/images/HomePage/Hero/985553596.jpg")
+                    background: url("https://www.bartonweb.site/wp-content/uploads/2019/07/domenico-loia-hGV2TfOh0ns-unsplash.jpg") no-repeat fixed  bottom;
+                    background-size:cover;
                 }
 
                 div.banner-button-slide-2{
                     padding-top:300px;
-                    background-image: url("https://www.istockphoto.com/resources/images/HomePage/Hero/530842059.jpg")
+                    background: url("https://www.bartonweb.site/wp-content/uploads/2020/03/data-sea.jpg") no-repeat scroll center;
+                    background-size:cover;
                 }
 
                 // .banner-container{
@@ -55,7 +57,7 @@ const Banner =()=>(
                     background: rgba(0, 0, 0, 0.60);
                     box-shadow: 5px 5px 5px #888888;
                     border: none; 
-                    padding:6px 15px;     
+                    padding:10px 18px;     
                 }
 
                 .banner-button:hover{

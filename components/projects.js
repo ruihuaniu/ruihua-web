@@ -12,9 +12,9 @@ const Projects = () => {
 
     const projects = [
         { id: 1, title: "Serene Project", type: "commercial", link: "http://serene.tk", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/serene-web.png", description: "A Web application based on Monash Industry project." },
-        { id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
-        { id: 3, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
-        { id: 4, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
+        { id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application project with basic e-commerce features." },
+        { id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial project with various eCommerce features." },
+        // { id: 4, title: "Superior Carpet Care Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
     ]
 
     const checkProjects = (item) => {
@@ -33,7 +33,7 @@ const Projects = () => {
 
     return (
 
-        <div className="project-card-wrapper">
+        <div className="project-container" id="projects-card">
             <h1>MY WORK</h1>
             <Tabs defaultActiveKey="all">
             <TabPane tab="ALL" key="all">
@@ -74,7 +74,7 @@ const Projects = () => {
 
             <style jsx>
                 {`
-                    .project-card-wrapper{
+                    .project-container{
                         background:#f5f5f5;
                         padding:50px 15px;
                         text-align:center;
