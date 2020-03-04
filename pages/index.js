@@ -16,8 +16,8 @@ const Home = () => {
   return(
     <div>
     <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>Barton-Outstanding Full Stack Developer</title>
+      <link rel="icon" href="/images/icon.png" />
     </Head>
     <Header/>
     <Banner/>

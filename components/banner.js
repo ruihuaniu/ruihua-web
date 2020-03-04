@@ -33,13 +33,13 @@ const Banner =()=>(
 
                 div.banner-button-slide-1{
                     padding-top:300px;
-                    background: url("https://www.bartonweb.site/wp-content/uploads/2019/07/domenico-loia-hGV2TfOh0ns-unsplash.jpg") no-repeat fixed  bottom;
+                    background: url("/images/bartonweb.jpg") no-repeat scroll center;
                     background-size:cover;
                 }
 
                 div.banner-button-slide-2{
                     padding-top:300px;
-                    background: url("https://www.bartonweb.site/wp-content/uploads/2020/03/data-sea.jpg") no-repeat scroll center;
+                    background: url("/images/data-sea.jpg") no-repeat fixed center;
                     background-size:cover;
                 }
 
