@@ -34,7 +34,7 @@ const About =()=>{
                             <Col xs={{ span: 24 }} sm={{ span: 12 }}>
                                 <ul>
                                     <li>AWS, Linux</li>
-                                    <li>Git, Jenkins, Jest</li>
+                                    <li>Git, Jest, Webpack</li>
                                     <li>WordPress CMS</li>
                                     <li>Adobe XD, Analytics</li>
                                 </ul>
@@ -52,8 +52,7 @@ const About =()=>{
             <style jsx>{`
                 .about-container{
 
-                    background: rgba(0,0,0,0.8) 
-                    url("https://www.bartonweb.site/wp-content/uploads/2019/06/marvin-meyer-SYTO3xs06fU-unsplash.jpg") 
+                    background: rgba(0,0,0,0.8) url("/images/barton_banner.jpg") ;
                     no-repeat fixed center;
                     background-size: cover;
                     background-blend-mode: darken;

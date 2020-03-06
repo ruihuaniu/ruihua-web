@@ -24,7 +24,7 @@ const Projects = () => {
         return (
             <Col xs={{ span: 24 }} md={{ span: 12 }} xl={{ span: 8 }} key={item.id} >
                 <a href={item.link} target="_blank">
-                    <Card hoverable cover={<img alt={item.title} src={item.photo} />}>
+                    <Card hoverable cover={<img alt={item.title} src= {item.photo} />}>
 
                         <Meta className="card-info" style={{ fontSize: 12.5 }} title={item.title} description={item.description} />
                     </Card>

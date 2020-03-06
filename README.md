@@ -1,6 +1,6 @@
 # Barton Web Project
-
----
+> Lazy loading of images and CSS.
+> Automatically optimize images.
 
 
 ## Languages & Libraries
