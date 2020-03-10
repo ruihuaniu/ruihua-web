@@ -11,12 +11,18 @@ const Projects = () => {
 
 
     const projects = [
-        { id: 1, title: "Serene Project", type: "commercial", link: "http://serene.tk", 
-        photo: "/images/serene.png", description: "A Web application based on Monash Industry project." },
-        { id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", 
-        photo: "/images/tfc_commercial.png", description: "A Commercial Web application project with basic e-commerce features." },
-        { id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au", 
-        photo: "/images/timber_floor_center.png", description: "A Commercial project with various eCommerce features." },
+        {
+            id: 1, title: "Serene Project", type: "commercial", link: "http://serene.tk",
+            photo: require("../public/images/serene.png").default, description: "A Web application based on Monash Industry project."
+        },
+        {
+            id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au",
+            photo: require("../public/images/tfc_commercial.png").default, description: "A Commercial Web application project with basic e-commerce features."
+        },
+        {
+            id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au",
+            photo: require("../public/images/timber_floor_center.png").default, description: "A Commercial project with various eCommerce features."
+        },
         // { id: 4, title: "Superior Carpet Care Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
     ]
 
@@ -24,8 +30,7 @@ const Projects = () => {
         return (
             <Col xs={{ span: 24 }} md={{ span: 12 }} xl={{ span: 8 }} key={item.id} >
                 <a href={item.link} target="_blank">
-                    <Card hoverable cover={<img alt={item.title} src= {item.photo} />}>
-
+                    <Card hoverable cover={<img alt={item.title} src={item.photo} />} >
                         <Meta className="card-info" style={{ fontSize: 12.5 }} title={item.title} description={item.description} />
                     </Card>
                 </a>
@@ -37,18 +42,23 @@ const Projects = () => {
     return (
 
         <div className="project-container" id="projects-card">
+
             <h1>MY WORK</h1>
             <Tabs defaultActiveKey="all">
-            <TabPane tab="ALL" key="all">
+                <TabPane tab="ALL" key="all">
                     <Row gutter={[24, 24]}>
                         {projects.map((item) => {
-                                return (
-                                    checkProjects(item)
-                                )
+                            return (
+                                checkProjects(item)
+                            )
                         })}
+                        <Col>
+
+
+                        </Col>
                     </Row>
                 </TabPane>
-                <TabPane tab="COMMERCIAL"  key="commercial">
+                <TabPane tab="COMMERCIAL" key="commercial">
                     <Row gutter={[24, 24]}>
                         {projects.map((item) => {
                             if (item.type.includes("commercial")) {
@@ -71,9 +81,11 @@ const Projects = () => {
                     </Row>
                 </TabPane>
                 <TabPane tab="PERSONAL" disabled key="personal">
-                   
+
                 </TabPane>
             </Tabs>
+
+
 
             <style jsx>
                 {`

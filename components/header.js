@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import '../public/style/components/header.css'
+// import '../public/style/components/header.css'
 import { Row, Col, Menu } from 'antd'
 import { HomeOutlined, HeartOutlined, BarChartOutlined } from '@ant-design/icons'
 
@@ -15,10 +15,35 @@ const Header = () => (
             <Col xs={4} sm={12} md={12} lg={12} xl={12}>
                 <Menu mode="horizontal">
                     <Menu.Item><Link href="/"><a><HomeOutlined />Home</a></Link></Menu.Item>
-                    <Menu.Item disabled><Link href="/data"><a><BarChartOutlined/>Data</a></Link></Menu.Item>
+                    <Menu.Item ><Link href="/data"><a><BarChartOutlined/>Data</a></Link></Menu.Item>
                 </Menu>
             </Col>
         </Row>
+
+        <style jsx>{`
+            .header{
+                background-color:#ffffff;
+                padding: 15px;
+                /* overflow:hidden; */
+                height:60px;
+                border-bottom:2px solid #f0f0f0;
+                text-align:center;
+               
+            }
+            
+            .header-logo{
+                color: #1e90ff;
+                font-size: 1.4rem;
+                text-align: left;
+            }
+            
+            .header-text{
+                font-size:.8rem;
+                color: #999999;
+                display:inline-block;
+                padding-left: 0.3rem;
+            }
+        `} </style>
     </div>
 )
 

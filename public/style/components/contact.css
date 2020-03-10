@@ -1,0 +1,7 @@
+.contact-container .ant-form-item{
+    margin-bottom: 0 !important;
+}
+
+.contact-container .ant-form-item button{
+    margin-top:20px;
+}
