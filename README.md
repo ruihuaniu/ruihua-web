@@ -19,7 +19,7 @@
 > eg： `<img src={require("../public/images/serene.png")} />` isn't working even the Webpack has been well configured (`esModule:false` with `file-loader` doesn't work), the images just don't show up on the page.    
 > The error message is 404 (Not Found), and the Elements is `<img src="[object Module]" >` on DevTools.      
 
-    * My fix is to add `.default` at the end of `src` property , like '<img src={require("../public/images/serene.png").default} />`. It's a little weird, but it works.
+ * My fix is to add `.default` at the end of `src` property , like '<img src={require("../public/images/serene.png").default} />`. It's a little weird, but it works.
 
  2. next-optimized-images plugin doesn't work
    * This plugin must work with `require` or `import` when dealing with images
