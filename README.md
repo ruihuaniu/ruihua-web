@@ -9,7 +9,7 @@
  * Chart.js
  * Ant Design
  * Node.js / Koa
- * MongoDb
+ * MySQL
  * Jest
  * Git
 

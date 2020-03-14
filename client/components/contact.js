@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Button, Form, Row, Col, Input,Select } from 'antd'
 import { MailOutlined, PhoneOutlined,PushpinOutlined } from '@ant-design/icons'
-// import '../public/style/components/contact.css'
+import axios from 'axios'
+import '../public/style/components/contact.css'
 
 const Contact = () => {
 
     const { Option } = Select;
+
+    const [name, setName]=useState("")
+    const [email, setEmail]=useState("")
+    const [message, setMessage]=useState("")
+    const [source, setSource]=useState("linkedin")
 
     const layout = {
         labelCol: { span: 12, },
@@ -19,6 +25,18 @@ const Contact = () => {
             email: 'Not a validate email!',
             number: 'Not a validate number!'
         }
+    }
+
+    const handleSubmit = ()=>{
+        axios.post("http://localhost:3030/api/v1/contacts", 
+        {"name":name, "email":email, "message":message, "source": source} )
+        .then((res)=>{
+            console.log(res);            
+        })
+        .catch((err)=>{
+            console.log(err);
+            
+        })
     }
 
     return (
@@ -55,22 +73,22 @@ const Contact = () => {
                     <div className="contact-container-right">
                         <p>Leave a message here,I will be with you shortly</p>
                         <hr />
-                        <Form {...layout} layout={"vertical"} validateMessages={validateMessages}>
+                        <Form {...layout} layout={"vertical"} validateMessages={validateMessages} onFinish={handleSubmit}>
                             <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
-                                <Input />
+                                <Input value={name} onChange = {(e)=>setName(e.target.value)}/>
                             </Form.Item>
                             <Form.Item name={['user', 'email']} label="Email" rules={[{ required: true }, { type: 'email' }]}>
-                                <Input />
+                                <Input value={email} onChange = {(e)=>setEmail(e.target.value)}/>
                             </Form.Item>
                             <Form.Item name={['user', 'message']} label="Message" rules={[{ required: true }]}>
-                                <Input.TextArea />
+                                <Input.TextArea value={message} onChange = {(e)=>setMessage(e.target.value)}/>
                             </Form.Item>
-                            <Form.Item name={['user', 'origin']} label="How did you hear about me" rules={[{ required: true }]}>
-                                <Select defaultValue="linkedin">
+                            <Form.Item name={['user', 'source']} label="How did you hear about me" rules={[{ required: false }]}>
+                                <Select defaultValue = {source} onChange = {(value)=>setSource(value)}>
                                     <Option value="linkedin">LinkedIn</Option>
-                                    <Option value="Seek">Seek</Option>
-                                    <Option value="Indeed">Indeed</Option>
-                                    <Option value="Ohter">Others</Option>
+                                    <Option value="seek">Seek</Option>
+                                    <Option value="indeed">Indeed</Option>
+                                    <Option value="other">Others</Option>
                                 </Select>
                             </Form.Item>
                             <Form.Item>
