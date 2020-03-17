@@ -1,6 +1,14 @@
 # Barton Web Project
 > Lazy loading of images and CSS.
 > Automatically optimize images.
+Web Application Structure     
+
+```
+graph LR
+A(Client-Front end) --- |RESTful API| B(Service-Middleware) 
+    B(Service-Middleware) ---|RESTful API| C(Admin-Back end)
+   
+```
 
 
 ## Languages & Libraries
@@ -8,7 +16,7 @@
  * D3.js
  * Chart.js
  * Ant Design
- * Node.js / Koa
+ * Node.js / Koa.js
  * MySQL
  * Jest
  * Git

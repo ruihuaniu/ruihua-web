@@ -21,14 +21,14 @@ router.post('/', async (ctx) => {
     const transporter =  nodemailer.createTransport({
         service: 'SendinBlue',
         auth: {
-            user: 'nrh36@126.com',
-            pass: 'v0kDxO8hTpILR1cX'
+            user: 'xxx@xxx.com',
+            pass: 'xxx'
         }
     })
 
     const message = {
         from: `${contact.name} <${contact.email}>`,
-        to: 'nrh36@126.com',
+        to: 'xxx@xxx.com',
         subject: 'Contact Form',
         // text: contacts.length ? JSON.stringify(contacts[0]) : "Hello, no contact form found! NRH!!!",
         
