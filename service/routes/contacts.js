@@ -1,4 +1,5 @@
 const Router = require('@koa/router')
+const nodemailer = require('nodemailer')
 
 const router = new Router()
 
@@ -10,7 +11,7 @@ router.get('/', async(ctx)=>{
 
 
 // RESTful API for Contact form
-router.post('/contacts', async (ctx) => {
+router.post('/', async (ctx) => {
 
     const contact = ctx.request.body  
     contacts.push(contact)
@@ -53,5 +54,5 @@ router.post('/contacts', async (ctx) => {
 })
 
 
-module.exports = router 
+module.exports = router
 

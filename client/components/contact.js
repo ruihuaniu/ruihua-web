@@ -3,10 +3,12 @@ import { Button, Form, Row, Col, Input,Select } from 'antd'
 import { MailOutlined, PhoneOutlined,PushpinOutlined } from '@ant-design/icons'
 import axios from 'axios'
 import '../public/style/components/contact.css'
+import { formatCountdown } from 'antd/lib/statistic/utils';
 
 const Contact = () => {
 
     const { Option } = Select;
+    const [form] = Form.useForm();
 
     const [name, setName]=useState("")
     const [email, setEmail]=useState("")
@@ -31,7 +33,8 @@ const Contact = () => {
         axios.post("http://localhost:3030/api/v1/contacts", 
         {"name":name, "email":email, "message":message, "source": source} )
         .then((res)=>{
-            console.log(res);            
+            console.log(res);  
+            form.resetFields()    
         })
         .catch((err)=>{
             console.log(err);
@@ -73,7 +76,7 @@ const Contact = () => {
                     <div className="contact-container-right">
                         <p>Leave a message here,I will be with you shortly</p>
                         <hr />
-                        <Form {...layout} layout={"vertical"} validateMessages={validateMessages} onFinish={handleSubmit}>
+                        <Form form={form} {...layout} layout={"vertical"} validateMessages={validateMessages} onFinish={handleSubmit}>
                             <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
                                 <Input value={name} onChange = {(e)=>setName(e.target.value)}/>
                             </Form.Item>
@@ -92,7 +95,7 @@ const Contact = () => {
                                 </Select>
                             </Form.Item>
                             <Form.Item>
-                                <Button type="primary" htmlType="submit">
+                                <Button type="primary" htmlType="submit"  >
                                     Submit
                                 </Button>
                             </Form.Item>

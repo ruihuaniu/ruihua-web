@@ -15,7 +15,7 @@ const projects = [
     {
         id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au",
         photo: "../public/images/timber_floor_center.png", description: "A Commercial project with various eCommerce features."
-    },
+    }
    
 ]
 

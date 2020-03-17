@@ -3,7 +3,6 @@ const json = require('koa-json')
 const Router = require('@koa/router')
 const cors = require('@koa/cors')
 const bodyParser = require('koa-bodyparser')
-const nodemailer = require('nodemailer')
 const projectsAPI = require('./routes/projects.js')
 const contactsAPI = require('./routes/contacts.js')
 
@@ -15,8 +14,8 @@ app.use(cors())
 app.use(bodyParser())
 
 app.use(async(ctx, next)=>{
-    // ctx.body= new Date().getFullYear()
-    // await next()
+    ctx.body= new Date().getFullYear()
+    await next()
 })
 
 router.prefix('/api/v1')
