@@ -27,13 +27,13 @@ const About =()=>{
                                 <ul>
                                     <li>HTML, CSS / SCSS, Ant Design</li>
                                     <li>JavaScript / React / Redux</li>
-                                    <li>Nodejs, PHP, Python</li>
+                                    <li>Node.js, PHP, Python</li>
                                     <li>MySQL, MongoDB</li>
                                 </ul>
                             </Col>
                             <Col xs={{ span: 24 }} sm={{ span: 12 }}>
                                 <ul>
-                                    <li>AWS, Linux</li>
+                                    <li>AWS, Linux, Docker</li>
                                     <li>Git, Jest, Webpack</li>
                                     <li>WordPress CMS</li>
                                     <li>Adobe XD, Analytics</li>

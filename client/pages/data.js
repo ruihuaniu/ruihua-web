@@ -13,7 +13,7 @@ const Data = () => {
             // .get('https://jsonplaceholder.typicode.com/photos?_start=10&_limit=20')
             .get('http://localhost:3030/api/v1/projects')
             .then(res => {
-                // console.log(res.data)
+                console.log(res.data)
                 setDbdata(res.data)
                 //console.log(dbdata)
 
@@ -25,15 +25,18 @@ const Data = () => {
     const userIds = [1,2,3]
 
 
-    const submitHandler = ()=>{
-        axios.post("http://localhost:3030/api/v1/contacts", {"Name":name, "Email":email, "Message":message, "Source":source} )
-        .then((res)=>{
-            console.log(res);            
-        })
-        .catch((err)=>{
-            console.log(err);
+    const deleteHandle = (index)=>{
+        // axios.delete("http://localhost:3030/api/v1/contacts" )
+        // .then((res)=>{
+        //     console.log(res);            
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
             
-        })
+        // })
+        const newData = [...dbdata]
+        newData.splice(index,1)
+        setDbdata(newData)
     }
 
     return (
@@ -44,17 +47,24 @@ const Data = () => {
             </Head>
             <Header />
             <div>
+                <ul>
                 {                   
-                dbdata.map((item)=>{
+                dbdata.map((item,index)=>{
                     return(
                         // <img src={eval(item.photo)} alt="loop photos" key={item.id}/>
-                        <div key={item.id}>
-                            {/* {item.description}                          */}
-                        </div>                      
+                        <li key={item.id}>                           
+
+                                {item.description}
+                                <span><button onClick={()=>deleteHandle(index)} >Delete</button></span>                             
+                        </li> 
+                                         
                     )                    
                 })
                 }
 
+
+                </ul>
+               
                     
                    {/* <img src={require("../public/images/serene.png").default} /> 
                    
