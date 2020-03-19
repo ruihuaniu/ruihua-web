@@ -3,6 +3,7 @@ import { Button, Form, Row, Col, Input,Select } from 'antd'
 import { MailOutlined, PhoneOutlined,PushpinOutlined } from '@ant-design/icons'
 import axios from 'axios'
 import '../public/style/components/contact.css'
+import APIPATH from '../config/apiUrl'
 import { formatCountdown } from 'antd/lib/statistic/utils';
 
 const Contact = () => {
@@ -30,7 +31,7 @@ const Contact = () => {
     }
 
     const handleSubmit = ()=>{
-        axios.post("http://localhost:3030/api/v1/contacts", 
+        axios.post(APIPATH.postContacts, 
         {"name":name, "email":email, "message":message, "source": source} )
         .then((res)=>{
             console.log(res);  

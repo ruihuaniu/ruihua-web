@@ -12,6 +12,10 @@
 # next.js
 /client/.next/
 /client/out/
+/client/.firebase
+/client/.firebaserc
+/client/firebase.json
+
 
 # production
 /client/build

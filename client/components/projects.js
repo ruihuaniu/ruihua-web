@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
 import { Card, Col, Row, Tabs } from 'antd'
+import axios from 'axios';
+import APIPATH from '../config/apiUrl'
+
+
 
 
 
@@ -8,23 +12,38 @@ const Projects = () => {
 
     const { Meta } = Card;
     const { TabPane } = Tabs;
+    // let projects = []
+    const [projects, setProjects] = useState([])
 
+    useEffect(()=>{
+        axios.get(APIPATH.getProjects)
+        .then((res)=>{
+            console.log(res)
+            setProjects(res.data) 
+            
+        })
+        .catch((err)=>{
+            console.log(err)
+            
+        })
+    },[])
+    
 
-    const projects = [
-        {
-            id: 1, title: "Serene Project", type: "commercial", link: "http://serene.tk",
-            photo: require("../public/images/serene.png").default, description: "A Web application based on Monash Industry project."
-        },
-        {
-            id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au",
-            photo: require("../public/images/tfc_commercial.png").default, description: "A Commercial Web application project with basic e-commerce features."
-        },
-        {
-            id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au",
-            photo: require("../public/images/timber_floor_center.png").default, description: "A Commercial project with various eCommerce features."
-        },
-        // { id: 4, title: "Superior Carpet Care Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
-    ]
+    // const projects = [
+    //     {
+    //         id: 1, title: "Serene Project", type: "commercial", link: "http://serene.tk",
+    //         photo: require("../public/images/serene.png").default, description: "A Web application based on Monash Industry project."
+    //     },
+    //     {
+    //         id: 2, title: "TFC Commercial Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au",
+    //         photo: require("../public/images/tfc_commercial.png").default, description: "A Commercial Web application project with basic e-commerce features."
+    //     },
+    //     {
+    //         id: 3, title: "Timber Floor Centre Project", type: "commercial ecommerce", link: "https://www.timberfloorcentre.com.au",
+    //         photo: require("../public/images/timber_floor_center.png").default, description: "A Commercial project with various eCommerce features."
+    //     },
+    //     // { id: 4, title: "Superior Carpet Care Project", type: "commercial ecommerce", link: "https://www.tfccommercial.com.au", photo: "https://www.bartonweb.site/wp-content/uploads/2019/05/tfc-commercial-web2.png", description: "A Commercial Web application." },
+    // ]
 
     const checkProjects = (item) => {
         return (

@@ -1,6 +1,7 @@
 # Barton Web Project
 > Lazy loading of images and CSS.
-> Automatically optimize images.
+> Automatically optimize images.   
+  
 Web Application Structure     
 
 ```
