@@ -106,6 +106,19 @@ const Data = () => {
     )
 }
 
+
+// export async function getStaticProps(){
+//     const res = await axios.get('http://localhost:3030/api/v1/projects')
+//     const dbdata = await res.data
+
+
+//     return{
+//         props:{
+//             dbdata,
+//         },
+//     }
+// }
+
 export default Data
 
 
