@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "now-build": "next build"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.8.7",
