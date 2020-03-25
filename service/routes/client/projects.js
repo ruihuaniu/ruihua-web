@@ -55,8 +55,6 @@ router = new Router()
 
 
 
-
-
 // RESTful API for Projects
 router.get('/', async(ctx)=>{
     ctx.body=projects
@@ -75,7 +73,6 @@ router.post('/', async (ctx) => {
         photo: "../public/images/serene.png", description: "A Web application based on Monash Industry project."
     }
     projects.push(project)
-
     ctx.body = projects
 })
 

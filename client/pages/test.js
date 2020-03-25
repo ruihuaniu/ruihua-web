@@ -1,50 +1,55 @@
-
+import { useEffect } from 'react'
 import axios from 'axios'
-import fetch from 'node-fetch'
+
 import { resolveOnChange } from 'antd/lib/input/Input';
 
 // {projects}
 
-const Test =({projects})=>{
+const Test = ({projects}) => {
+
+    //method1: client side rendering. Normal in react
+
+    // useEffect( () => {
+    //     async function fetchData() {
+    //         const res = await axios.get('http://localhost:3030/api/v1/projects')
+    //         const projects = await res.data
+    //         console.log(projects);
+    //         console.log('under projects');
+    //     }
+
+    //     fetchData()
+
+    // }, [])
 
 
-//    const res=  axios.get('http://localhost:3030/api/v1/projects')
 
-//    const projects = await res.then((res)=>res.data);
-   console.log(projects);
-   console.log('under projects');
-   
-   
-    
-   
-    return(
+
+    return (
         <div>
-            {/* {projects.map((item)=>(
+            {projects.map((item)=>(
                 <div>{item.description}</div>
-            ))} */}
+            ))}
 
             something
+
+            {/* {console.log("projects in the body", projects)}; */}
+            
         </div>
     )
 
 }
 
-// export async function getStaticProps() {
+//method1: Server side rendering, used in Next.js
+export async function getStaticProps() {
 
-//     const projects = new Promise((resolve)=>{
-//         axios.get('http://localhost:3030/api/v1/projects')
-//     .then((res)=>{
-//         console.log(res.data);
-//         resolve(res.data)
-        
-//     })
-
-// })
+    const res = await axios.get('http://localhost:3030/api/v1/projects')
+    const projects = await res.data
     
- 
-//    return {props:{projects,}} 
-// }
+   return {props:{projects,}} 
+} 
+
 
 
 
 export default Test
+
