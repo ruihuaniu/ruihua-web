@@ -12,21 +12,67 @@ const Projects = () => {
 
     const { Meta } = Card;
     const { TabPane } = Tabs;
-    // let projects = []
-    const [projects, setProjects] = useState([])
 
-    useEffect(()=>{
-        axios.get(APIPATH.getProjects)
-        .then((res)=>{
-            console.log(res)
-            setProjects(res.data) 
+    // use hardcopy of data
+    const projects = [
+        {
+            "id": 1,
+            "title": "Serene Project",
+            "type": "commercial",
+            "link": "http://serene.tk",
+            "photo": "/images/serene.png",
+            "description": "A Web application based on Monash Industry project."
+          },
+          {
+            "id": 2,
+            "title": "Timber Floor Centre Project",
+            "type": "commercial ecommerce",
+            "link": "https://www.timberfloorcentre.com.au",
+            "photo": "/images/timber_floor_center.png",
+            "description": "A Commercial project with various eCommerce features."
+          },
+          {
+            "id": 3,
+            "title": "Admin Management Tool",
+            "type": "commercial personal",
+            "link": "https://admin-management.now.sh",
+            "photo": "/images/admin_management.png",
+            "description": "A admin management tool with various features."
+          },
+          {
+            "id": 4,
+            "title": "TFC Commercial Project",
+            "type": "commercial ecommerce",
+            "link": "https://www.tfccommercial.com.au",
+            "photo": "./images/tfc_commercial.png",
+            "description": "A Commercial Web application project with basic e-commerce features."
+          },
+          {
+            "id": 5,
+            "title": "Barton web Project",
+            "type": "personal",
+            "link": "https://bartonweb.web.app/",
+            "photo": "/images/barton_web.png",
+            "description": "A project based on React and Node.js."
+          }
+    ]
+    
+    
+    // use API to get data
+    // const [projects, setProjects] = useState([])
+
+    // useEffect(()=>{
+    //     axios.get(APIPATH.getProjects)
+    //     .then((res)=>{
+    //         console.log(res)
+    //         setProjects(res.data) 
             
-        })
-        .catch((err)=>{
-            console.log(err)
+    //     })
+    //     .catch((err)=>{
+    //         console.log(err)
             
-        })
-    },[])
+    //     })
+    // },[])
     
 
    
