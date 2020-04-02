@@ -5,7 +5,7 @@ import { resolveOnChange } from 'antd/lib/input/Input';
 
 // {projects}
 
-const Test = ({projects}) => {
+const Test = () => {
 
     //method1: client side rendering. Normal in react
 
@@ -26,9 +26,9 @@ const Test = ({projects}) => {
 
     return (
         <div>
-            {projects.map((item)=>(
+            {/* {projects.map((item)=>(
                 <div>{item.description}</div>
-            ))}
+            ))} */}
 
             something
 
@@ -39,14 +39,14 @@ const Test = ({projects}) => {
 
 }
 
-//method1: Server side rendering, used in Next.js
-export async function getStaticProps() {
+//method2: Server side rendering, used in Next.js
+// export async function getStaticProps() {
 
-    const res = await axios.get('http://localhost:3030/api/v1/projects')
-    const projects = await res.data
+//     const res = await axios.get('http://localhost:3030/api/v1/projects')
+//     const projects = await res.data
     
-   return {props:{projects,}} 
-} 
+//    return {props:{projects,}} 
+// } 
 
 
 

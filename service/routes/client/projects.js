@@ -1,5 +1,7 @@
 var Router =require('@koa/router')
 var mysql = require('mysql')
+
+//connect MySQL
 var connection =mysql.createConnection({
     host:'localhost',
     user: 'root',
@@ -18,6 +20,22 @@ let projects = [
       },
       {
         "id": 2,
+        "title": "Timber Floor Centre Project",
+        "type": "commercial ecommerce",
+        "link": "https://www.timberfloorcentre.com.au",
+        "photo": "/images/timber_floor_center.png",
+        "description": "A Commercial project with various eCommerce features."
+      },
+      {
+        "id": 3,
+        "title": "Admin Management Tool",
+        "type": "commercial personal",
+        "link": "https://admin-management.now.sh",
+        "photo": "/images/admin_management.png",
+        "description": "A admin management tool with various features."
+      },
+      {
+        "id": 4,
         "title": "TFC Commercial Project",
         "type": "commercial ecommerce",
         "link": "https://www.tfccommercial.com.au",
@@ -25,12 +43,12 @@ let projects = [
         "description": "A Commercial Web application project with basic e-commerce features."
       },
       {
-        "id": 3,
-        "title": "Timber Floor Centre Project",
-        "type": "commercial ecommerce",
-        "link": "https://www.timberfloorcentre.com.au",
-        "photo": "/images/timber_floor_center.png",
-        "description": "A Commercial project with various eCommerce features."
+        "id": 5,
+        "title": "Barton web Project",
+        "type": "personal",
+        "link": "https://bartonweb.web.app/",
+        "photo": "/images/barton_web.png",
+        "description": "A project based on React and Node.js."
       }
 ]
 
@@ -45,8 +63,9 @@ connection.connect(function(err) {
 
 connection.query('SELECT * FROM projects', function (error, results, fields) {
     if (error) throw error;
-    console.log('The solution is: ', results);
-    projects=[...results];
+    
+    projects=projects.length>results.length?projects:results;
+    console.log('The solution is: ', projects);
   });
    
   connection.end();

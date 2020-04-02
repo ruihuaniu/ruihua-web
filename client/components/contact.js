@@ -31,16 +31,16 @@ const Contact = () => {
     }
 
     const handleSubmit = ()=>{
-        axios.post(APIPATH.postContacts, 
-        {"name":name, "email":email, "message":message, "source": source} )
-        .then((res)=>{
-            console.log(res);  
-            form.resetFields()    
-        })
-        .catch((err)=>{
-            console.log(err);
+        // axios.post(APIPATH.postContacts, 
+        // {"name":name, "email":email, "message":message, "source": source} )
+        // .then((res)=>{
+        //     console.log(res);  
+        //     form.resetFields()    
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
             
-        })
+        // })
     }
 
     return (
