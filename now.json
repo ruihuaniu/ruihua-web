@@ -1,11 +1,8 @@
 {
-    "name": "barton web",
+    
     "version": 2,
     "builds": [
-        {
-            "src": "/service/app.js",
-            "use": "@now/node"
-        },
+        
         {
             "src": "/client/package.json",
             "use": "@now/next"
@@ -13,10 +10,10 @@
       
     ],
     "routes": [
-        { "src": "/service", "dest": "app.js" },
+        
         {
             "src": "/client",
-            "dest": "/out/index.html"
+            "dest": "/out/"
         }
        
     ]
