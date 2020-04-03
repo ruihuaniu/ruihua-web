@@ -6,7 +6,8 @@
     "scripts": {
         "client": "cd client && npm run start",
         "server": "cd service && npm run start",
-        "start": "npm install && concurrently  \"npm run server\" \"npm run client\""
+        "start": "npm run server",
+        "heroku-postbuild": "npm run client"
     },
     "keywords": [],
     "author": "",
