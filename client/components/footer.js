@@ -29,6 +29,7 @@ const Footer = () => {
                 </Col> */} 
 
             </Row>
+            <div className="footer-description">This site is developed with React and Node.js. <a href="https://github.com/BartonNIU/barton-web" target="_blank">Click here to see more details</a></div>
             <div className="footer-copyright">@Copyright 2020 Barton All Rights Reserved</div>
 
 
@@ -80,6 +81,12 @@ const Footer = () => {
                 .footer-container-right a{
                     color:rgba(255,255,255,0.7);
                     text-decoration:underline;
+                }
+
+                .footer-description{
+                    font-size:14px;
+                    color:#cccccc;
+                    padding: 15px 0;
                 }
 
                 .footer-copyright{

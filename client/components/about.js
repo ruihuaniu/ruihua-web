@@ -25,18 +25,18 @@ const About =()=>{
                             <Row gutter={24}>
                             <Col xs={{ span: 24 }} sm={{ span: 12 }} >
                                 <ul>
-                                    <li>HTML, CSS / SCSS, Ant Design</li>
+                                    <li>HTML, CSS / SCSS</li>
                                     <li>JavaScript / React / Redux</li>
-                                    <li>Node.js, PHP, Python</li>
+                                    <li>Node.js /Koa.js, PHP</li>
                                     <li>MySQL, MongoDB</li>
                                 </ul>
                             </Col>
                             <Col xs={{ span: 24 }} sm={{ span: 12 }}>
                                 <ul>
+                                    <li>Jest, Webpack, NPM</li>
+                                    <li>Git, CI/CD, Travis</li>
                                     <li>AWS, Linux, Docker</li>
-                                    <li>Git, Jest, Webpack</li>
-                                    <li>WordPress CMS</li>
-                                    <li>Adobe XD, Analytics</li>
+                                    <li>WordPress CMS, Analytics</li>
                                 </ul>
                             </Col>
                             </Row>
