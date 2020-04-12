@@ -4,10 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "client": "cd client && npm run start",
-        "server": "cd service && npm run start",
-        "start": "npm run server",
-        "heroku-postbuild": "cd client &&  npm install && npm run start"
+        "client": "cd client && npm run dev",
+        "server": "cd service && npm run dev",
+        "start": "concurrently  \"npm run server\" \"npm run client\""
     },
     "keywords": [],
     "author": "",
