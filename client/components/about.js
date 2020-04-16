@@ -1,54 +1,56 @@
 import React from 'react';
-import {Row, Col} from 'antd'
+import { Row, Col } from 'antd'
 
 
-const About =()=>{
+const About = () => {
 
-    return(
+    return (
         <>
-         <h1 style={{textAlign:"center"}}>ABOUT ME</h1>
-        <div className="about-container">
-           
-            <Row gutter={24}>
-               <Col xs={{ span: 24 }} md={{ span: 5}} >
-                   <div className="about-left">
-                       <p className="about-left-upper">Masters graduate in information technology from Monash University</p>
-                       <p className="about-left-lower">I'm Ruihua (Barton) NIU</p>
-                    </div>
-               </Col>
-               <Col xs={{ span: 24 }} md={{ span: 19 }} >
-                    <div className="about-right">
-                        <div className="about-right-upper">A talented information technology professional with several years’ industry experience, an exceptional eye for detail and a drive to further my career within the Software Engineering field. I believe that my technical & soft skills, experience and my passion can help to make a difference with your business</div>
-                        <hr/>
-                        <div className="about-right-middle">SKILLS</div>
-                        <div className="about-right-lower">
-                            <Row gutter={24}>
-                            <Col xs={{ span: 24 }} sm={{ span: 12 }} >
-                                <ul>
-                                    <li>HTML, CSS / SCSS</li>
-                                    <li>JavaScript / React / Redux</li>
-                                    <li>Node.js /Koa.js, PHP</li>
-                                    <li>MySQL, MongoDB</li>
-                                </ul>
-                            </Col>
-                            <Col xs={{ span: 24 }} sm={{ span: 12 }}>
-                                <ul>
-                                    <li>Jest, Webpack, NPM</li>
-                                    <li>Git, CI/CD, Travis</li>
-                                    <li>AWS, Linux, Docker</li>
-                                    <li>WordPress CMS, Analytics</li>
-                                </ul>
-                            </Col>
-                            </Row>
-                           
-                           
 
-                        </div>
-                    </div>
-               </Col>
-            </Row>
+            <h1 style={{ textAlign: "center" }}>ABOUT ME</h1>
+            <div className="about-container">
+                <div className="about-container-inner">
+
+                    <Row gutter={24}>
+                        <Col xs={{ span: 24 }} md={{ span: 5 }} >
+                            <div className="about-left">
+                                <p className="about-left-upper">Masters graduate in information technology from Monash University</p>
+                                <p className="about-left-lower">I'm Ruihua (Barton) NIU</p>
+                            </div>
+                        </Col>
+                        <Col xs={{ span: 24 }} md={{ span: 19 }} >
+                            <div className="about-right">
+                                <div className="about-right-upper">A talented information technology professional with several years’ industry experience, an exceptional eye for detail and a drive to further my career within the Software Engineering field. I believe that my technical & soft skills, experience and my passion can help to make a difference with your business</div>
+                                <hr />
+                                <div className="about-right-middle">SKILLS</div>
+                                <div className="about-right-lower">
+                                    <Row gutter={24}>
+                                        <Col xs={{ span: 24 }} sm={{ span: 12 }} >
+                                            <ul>
+                                                <li>HTML, CSS / SCSS</li>
+                                                <li>JavaScript / React / Redux</li>
+                                                <li>Node.js /Koa.js, PHP</li>
+                                                <li>MySQL, MongoDB</li>
+                                            </ul>
+                                        </Col>
+                                        <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                                            <ul>
+                                                <li>Jest, Webpack, NPM</li>
+                                                <li>Git, CI/CD, Travis</li>
+                                                <li>AWS, Linux, Docker</li>
+                                                <li>WordPress CMS, Analytics</li>
+                                            </ul>
+                                        </Col>
+                                    </Row>
 
 
+
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+            </div >
             <style jsx>{`
                 .about-container{
 
@@ -61,6 +63,11 @@ const About =()=>{
                     color:#ffffff;
                     text-align:center;
                     
+                }
+
+                .about-container-inner{
+                    max-width:1500px;
+                    margin: 0 auto;
                 }
 
                 .about-left{
@@ -114,7 +121,7 @@ const About =()=>{
                 }
             
             `} </style>
-        </div>
+
         </>
     )
 

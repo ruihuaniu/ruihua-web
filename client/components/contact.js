@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import { Button, Form, Row, Col, Input,Select } from 'antd'
-import { MailOutlined, PhoneOutlined,PushpinOutlined } from '@ant-design/icons'
+import React, { useState } from 'react';
+import { Button, Form, Row, Col, Input, Select } from 'antd'
+import { MailOutlined, PhoneOutlined, PushpinOutlined } from '@ant-design/icons'
 import axios from 'axios'
 import '../public/style/components/contact.css'
 import APIPATH from '../config/apiUrl'
@@ -11,16 +11,16 @@ const Contact = () => {
     const { Option } = Select;
     const [form] = Form.useForm();
 
-    const [name, setName]=useState("")
-    const [email, setEmail]=useState("")
-    const [message, setMessage]=useState("")
-    const [source, setSource]=useState("linkedin")
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const [source, setSource] = useState("linkedin")
 
     const layout = {
         labelCol: { span: 12, },
-        wrapperCol: { span: 18, }
+        wrapperCol: { span: 14, }
     }
-    
+
 
     const validateMessages = {
         required: 'This field is required!',
@@ -30,7 +30,7 @@ const Contact = () => {
         }
     }
 
-    const handleSubmit = ()=>{
+    const handleSubmit = () => {
         // axios.post(APIPATH.postContacts, 
         // {"name":name, "email":email, "message":message, "source": source} )
         // .then((res)=>{
@@ -39,7 +39,7 @@ const Contact = () => {
         // })
         // .catch((err)=>{
         //     console.log(err);
-            
+
         // })
     }
 
@@ -47,26 +47,26 @@ const Contact = () => {
         <div className="contact-container">
             <h1 style={{ textAlign: "center" }}>CONTACT ME</h1>
             <div className="contact-container-card">
-                <Row gutter={[36,24]}>
+                <Row  >
                     <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-                        <PushpinOutlined  style={{ fontSize: '25px'}}/>
+                        <PushpinOutlined style={{ fontSize: '25px' }} />
                         <p>Address</p>
                         <p>Melbourne,Australia, 3000</p>
                     </Col>
                     <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-                        <PhoneOutlined style={{ fontSize: '25px'}}/>
+                        <PhoneOutlined style={{ fontSize: '25px' }} />
                         <p>Phone</p>
                         <a href="tel:0481 951 268">(+61) 481 951 268</a>
                     </Col>
                     <Col xs={{ span: 24 }} sm={{ span: 8 }}>
-                        <MailOutlined style={{ fontSize: '25px'}}/>
+                        <MailOutlined style={{ fontSize: '25px' }} />
                         <p>Email</p>
                         <a href="mailto:barton.niu@gmail.com">barton.niu@gmail.com</a>
                     </Col>
                 </Row>
             </div>
 
-            
+
             <Row >
                 <Col sm={{ span: 24 }} md={{ span: 10 }}>
                     <div className="contact-container-left">
@@ -79,16 +79,16 @@ const Contact = () => {
                         <hr />
                         <Form form={form} {...layout} layout={"vertical"} validateMessages={validateMessages} onFinish={handleSubmit}>
                             <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
-                                <Input value={name} onChange = {(e)=>setName(e.target.value)}/>
+                                <Input value={name} onChange={(e) => setName(e.target.value)} />
                             </Form.Item>
                             <Form.Item name={['user', 'email']} label="Email" rules={[{ required: true }, { type: 'email' }]}>
-                                <Input value={email} onChange = {(e)=>setEmail(e.target.value)}/>
+                                <Input value={email} onChange={(e) => setEmail(e.target.value)} />
                             </Form.Item>
                             <Form.Item name={['user', 'message']} label="Message" rules={[{ required: true }]}>
-                                <Input.TextArea value={message} onChange = {(e)=>setMessage(e.target.value)}/>
+                                <Input.TextArea value={message} onChange={(e) => setMessage(e.target.value)} />
                             </Form.Item>
                             <Form.Item name={['user', 'source']} label="How did you hear about me" rules={[{ required: false }]}>
-                                <Select defaultValue = {source} onChange = {(value)=>setSource(value)}>
+                                <Select defaultValue={source} onChange={(value) => setSource(value)}>
                                     <Option value="linkedin">LinkedIn</Option>
                                     <Option value="seek">Seek</Option>
                                     <Option value="indeed">Indeed</Option>
@@ -113,10 +113,12 @@ const Contact = () => {
 
                 .contact-container{
                     padding:50px 15px;
-                    text-align:center;
+                    max-width:1500px;
+                    margin:0 auto;
                 }
                 .contact-container-card{
-                    padding:20px 0;
+                    padding:30px 0;
+                    text-align:center;
                 }
 
                 .contact-container-left{  

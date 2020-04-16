@@ -9,8 +9,8 @@
 ## Languages & Libraries
 
 - React / Next.js
-- Chart.js
 - Node.js / Koa.js
+- Chart.js
 - MySQL
 - Jest
 - Git
