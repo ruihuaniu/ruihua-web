@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 // import '../public/style/components/header.css'
-import { Row, Col, Menu,Tooltip } from 'antd'
+import { Row, Col, Menu, Tooltip } from 'antd'
 import { HomeOutlined, HeartOutlined, BarChartOutlined } from '@ant-design/icons'
 
 
@@ -14,8 +14,8 @@ const Header = () => (
             </Col>
             <Col xs={4} sm={12} md={12} lg={12} xl={12}>
                 <Menu mode="horizontal">
-                    <Menu.Item style={{lineHeight:"40px"}}><Link href="/"><a><HomeOutlined />Home</a></Link></Menu.Item>
-                    <Menu.Item style={{lineHeight:"40px"}}><Link href="/data"><a><Tooltip placement="right" title="Under Construction"><BarChartOutlined/>Data</Tooltip></a></Link></Menu.Item>
+                    <Menu.Item style={{ lineHeight: "40px" }}><Link href="/"><a><HomeOutlined />Home</a></Link></Menu.Item>
+                    <Menu.Item disabled style={{ lineHeight: "40px" }}><Link href="/data"><a><BarChartOutlined />Data</a></Link></Menu.Item>
                 </Menu>
             </Col>
         </Row>
