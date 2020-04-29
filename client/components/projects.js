@@ -37,7 +37,7 @@ const Projects = () => {
             "type": "commercial personal",
             "link": "https://admin-management.now.sh",
             "photo": "/images/admin_management.png",
-            "description": "A admin management tool with various features."
+            "description": "An admin management tool with CURD and more features."
         },
         {
             "id": 4,
@@ -54,6 +54,14 @@ const Projects = () => {
             "link": "https://github.com/BartonNIU/barton-web",
             "photo": "/images/barton_web.png",
             "description": "A project based on React and Node.js."
+        },
+        {
+            "id": 6,
+            "title": "Search what you want",
+            "type": "personal",
+            "link": "https://search-what-you-want.now.sh/",
+            "photo": "/images/interesting_search.png",
+            "description": "Fuzzy search with auto validation and lazy loading"
         }
     ]
 
