@@ -19,9 +19,9 @@ const Projects = () => {
             "id": 1,
             "title": "Serene Project",
             "type": "commercial",
-            "link": "http://serene.tk",
+            "link": "https://serene.tk/listing_act.php",
             "photo": "/images/serene.png",
-            "description": "A Web application based on Monash Industry project."
+            "description": "Find the appropriate activities, parks and amenities with powerful search functionalities."
         },
         {
             "id": 2,
@@ -37,7 +37,7 @@ const Projects = () => {
             "type": "commercial personal",
             "link": "https://admin-management.now.sh",
             "photo": "/images/admin_management.png",
-            "description": "An admin management tool with CURD and more features."
+            "description": "Admin Management Tool. Add, edit, update, delete and order all the items."
         },
         {
             "id": 4,
@@ -53,7 +53,7 @@ const Projects = () => {
             "type": "personal",
             "link": "https://github.com/BartonNIU/barton-web",
             "photo": "/images/barton_web.png",
-            "description": "A project based on React and Node.js."
+            "description": "A React / Next.js with Node.js project. RESTful APIs"
         },
         {
             "id": 6,
@@ -61,7 +61,7 @@ const Projects = () => {
             "type": "personal",
             "link": "https://search-what-you-want.now.sh/",
             "photo": "/images/interesting_search.png",
-            "description": "Fuzzy search with auto validation and lazy loading"
+            "description": "Fuzzy search with auto validation and lazy loading. Mobile App created with React Native is available"
         }
     ]
 

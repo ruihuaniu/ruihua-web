@@ -20,7 +20,8 @@ const About = () => {
                         </Col>
                         <Col xs={{ span: 24 }} md={{ span: 19 }} >
                             <div className="about-right">
-                                <div className="about-right-upper">A talented ICT professional with several years’ industry experience, an exceptional eye for detail and a drive to further my career within the Software Engineering field. I believe that my technical & soft skills, experience and my passion can help to make a difference with your business</div>
+                                <div className="about-right-upper">
+                                    A software developer with several years’ industry experience, an exceptional eye for detail, a passion for creating performant products with delightful user experience, and a drive to further my career within the software engineering field. </div>
                                 <hr />
                                 <div className="about-right-middle">SKILLS</div>
                                 <div className="about-right-lower">
@@ -28,9 +29,9 @@ const About = () => {
                                         <Col xs={{ span: 24 }} sm={{ span: 12 }} >
                                             <ul>
                                                 <li>HTML, CSS / SASS</li>
-                                                <li>JavaScript / React / Redux</li>
+                                                <li>JavaScript / React / React Native / Redux </li>
                                                 <li>Node.js /Koa.js, PHP</li>
-                                                <li>MySQL, MongoDB</li>
+                                                <li>MySQL, GraphQL</li>
                                             </ul>
                                         </Col>
                                         <Col xs={{ span: 24 }} sm={{ span: 12 }}>

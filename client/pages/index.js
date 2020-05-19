@@ -6,43 +6,45 @@ import Banner from '../components/banner'
 import Projects from '../components/projects'
 import About from '../components/about'
 import Contact from '../components/contact'
+import Lucky from '../components/lucky'
 import Footer from '../components/footer'
 
 
 
 const Home = () => {
-  
 
-  return(
+
+  return (
     <div>
-    <Head>
-      <title>Barton-Outstanding Full Stack Developer</title>
-      <link rel="icon" href="/images/icon.png" />
-    </Head>
-    <Header/>
-    <Banner/>
-    
-    <div className="vertical-space"></div>
-    <Projects/>
+      <Head>
+        <title>Barton-Outstanding Full Stack Developer</title>
+        <link rel="icon" href="/images/icon.png" />
+      </Head>
+      <Header />
+      <Banner />
 
-    <About/>
-    <Contact/>
-    <Footer/>
+      <div className="vertical-space"></div>
+      <Projects />
 
-    {/* <style jsx>
+      <About />
+      <Contact />
+      <Lucky />
+      <Footer />
+
+      {/* <style jsx>
       {`
       .vertical-space{
         padding:30px;
       }
       `}
     </style> */}
-  
-  </div>
+
+    </div>
   )
 
 }
-  
-  
+
+
 
 
 export default Home
