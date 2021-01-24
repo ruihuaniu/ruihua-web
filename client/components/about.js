@@ -29,17 +29,17 @@ const About = () => {
                                         <Col xs={{ span: 24 }} sm={{ span: 12 }} >
                                             <ul>
                                                 <li>HTML, CSS / SASS</li>
-                                                <li>JavaScript / React / React Native / Redux </li>
-                                                <li>Node.js /Koa.js, PHP</li>
-                                                <li>MySQL, GraphQL</li>
+                                                <li>JavaScript / TypeScript  </li>
+                                                <li>React / React Native, Redux </li>
+
                                             </ul>
                                         </Col>
                                         <Col xs={{ span: 24 }} sm={{ span: 12 }}>
                                             <ul>
-                                                <li>Jest, Webpack, NPM</li>
-                                                <li>Git, CI/CD, Travis</li>
-                                                <li>AWS, Linux, Docker</li>
-                                                <li>WordPress CMS, Analytics</li>
+                                                <li>Node.js /Express, MongoDB  </li>
+                                                <li>Webpack, Jest, Enzyme</li>
+                                                <li>Git, CI/CD, Docker</li>
+
                                             </ul>
                                         </Col>
                                     </Row>

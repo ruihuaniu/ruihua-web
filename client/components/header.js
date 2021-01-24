@@ -10,7 +10,7 @@ const Header = () => (
         <Row >
             <Col xs={20} sm={12} md={12} lg={12} xl={12}>
                 <span className="header-logo">Barton</span>
-                <span className="header-text">Outstanding Full Stack Developer</span>
+                <span className="header-text">Outstanding Front End Developer</span>
             </Col>
             <Col xs={4} sm={12} md={12} lg={12} xl={12}>
                 <Menu mode="horizontal">
@@ -42,6 +42,10 @@ const Header = () => (
                 color: #999999;
                 display:inline-block;
                 padding-left: 0.3rem;
+            }
+
+            .ant-menu-horizontal{
+                text-align: center;
             }
         `} </style>
     </div>

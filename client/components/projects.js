@@ -5,15 +5,12 @@ import axios from 'axios';
 import APIPATH from '../config/apiUrl'
 
 
-
-
-
 const Projects = () => {
 
     const { Meta } = Card;
     const { TabPane } = Tabs;
 
-    // use hardcopy of data
+    // use hardcoded data
     const projects = [
         {
             "id": 1,
@@ -24,20 +21,28 @@ const Projects = () => {
             "description": "Find the appropriate activities, parks and amenities with powerful search functionalities."
         },
         {
-            "id": 2,
-            "title": "Timber Floor Centre Project",
-            "type": "commercial ecommerce",
-            "link": "https://www.timberfloorcentre.com.au",
-            "photo": "/images/timber_floor_center.png",
-            "description": "A Commercial project with various eCommerce features."
+            "id": 7,
+            "title": "Online Chat APP",
+            "type": "personal",
+            "link": "https://nrhchat.tk/",
+            "photo": "/images/nrh_chat0.png",
+            "description": "Real time communication APP with multiple features powered by Websocket"
         },
+        // {
+        //     "id": 2,
+        //     "title": "Timber Floor Centre Project",
+        //     "type": "commercial ecommerce",
+        //     "link": "https://www.timberfloorcentre.com.au",
+        //     "photo": "/images/timber_floor_center.png",
+        //     "description": "A Commercial project with various eCommerce features."
+        // },
         {
             "id": 3,
             "title": "Admin Management Tool",
             "type": "commercial personal",
             "link": "https://admin-management.now.sh",
             "photo": "/images/admin_management.png",
-            "description": "Admin Management Tool. Add, edit, update, delete and order all the items."
+            "description": "Admin Management Tool. Add, edit, update, delete, search and order all the items."
         },
         {
             "id": 4,
@@ -62,8 +67,22 @@ const Projects = () => {
             "link": "https://search-what-you-want.now.sh/",
             "photo": "/images/interesting_search.png",
             "description": "Fuzzy search with auto validation and lazy loading. Mobile App created with React Native is available"
-        }
+        },
+
     ]
+
+    // const shuffle = (arr) => {
+    //     const arrLen = arr.length;
+    //     for (let i = 0; i < arrLen - 1; i++) {
+    //         let j = Math.floor(Math.random() * (arrLen - i) + i);
+    //         [arr[i], arr[j]] = [arr[j], arr[i]]
+    //     }
+
+    //     return arr
+    // }
+
+    // const shuffleProjects = shuffle(projects)
+    // console.log("shuffleProjects", shuffleProjects);
 
 
     // use API to get data
@@ -82,6 +101,7 @@ const Projects = () => {
     //     })
     // },[])
 
+    // console.log("projectgs is", projects);
 
 
 
@@ -103,7 +123,7 @@ const Projects = () => {
         <div className="project-container" id="projects-card">
 
             <h1>MY WORK</h1>
-            <Tabs defaultActiveKey="all">
+            <Tabs defaultActiveKey="all" centered>
                 <TabPane tab="ALL" key="all">
                     <Row gutter={[24, 24]}>
                         {projects.map((item) => {
@@ -159,6 +179,14 @@ const Projects = () => {
 
                     h1{
                         text-shadow: 10px 10px 10px #000000S;
+                    }
+
+
+
+
+                    .ant-tabs-nav-wrap{
+                        // display:flex;
+                        justify-content: center !important;
                     }
 
                     // .card-info{

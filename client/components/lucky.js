@@ -9,8 +9,6 @@ function lucky() {
     const [randomNum, setRandomNum] = useState(0)
 
 
-
-
     useEffect(() => {
 
         const number = parseInt(Math.random() * 200)  // a random integer between 0 to 999
@@ -43,7 +41,7 @@ function lucky() {
 
     }, [])
 
-    console.log("random number is", randomNum);
+    //console.log("random number is", randomNum);
     //console.log("number is", number);
 
     return (

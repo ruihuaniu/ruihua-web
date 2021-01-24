@@ -4,8 +4,8 @@ const withCss = require('@zeit/next-css')
 const withOptimizedImages = require('next-optimized-images');
 // const withImages = require('next-images')
 
-if(typeof require !== 'undefined'){
-    require.extensions['.css']=file=>{}
+if (typeof require !== 'undefined') {
+  require.extensions['.css'] = file => { }
 }
 
 module.exports = withCss(withOptimizedImages({
@@ -54,9 +54,16 @@ module.exports = withCss(withOptimizedImages({
 //     //     quality: 75,
 //     //   },
 //     }],
-     
+
 //     //  withImages,
 
 //     withCss,
 //   ]);
 
+
+// environment variable
+// module.exports={
+//   env:{
+
+//   }
+// }

@@ -41,6 +41,8 @@ const Contact = () => {
         //     console.log(err);
 
         // })
+
+        form.resetFields()
     }
 
     return (
@@ -70,7 +72,7 @@ const Contact = () => {
             <Row >
                 <Col sm={{ span: 24 }} md={{ span: 10 }}>
                     <div className="contact-container-left">
-                        <img src={require("../public/images/barton_contact.jpg").default} />
+                        <img src="/images/barton_contact.jpg" />
                     </div>
                 </Col>
                 <Col sm={{ span: 24 }} md={{ span: 14 }}>

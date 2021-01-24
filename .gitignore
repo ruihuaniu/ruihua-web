@@ -16,6 +16,7 @@ client/out/
 client/.firebase
 client/.firebaserc
 client/firebase.json
+client/.next.con
 
 
 # production
@@ -36,3 +37,7 @@ yarn-error.log*
 .now
 
 
+functions/
+.history
+firebase.json
+.firebaserc
