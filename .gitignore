@@ -41,3 +41,6 @@ functions/
 .history
 firebase.json
 .firebaserc
+
+mails.js
+mail.js
