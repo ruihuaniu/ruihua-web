@@ -1,31 +1,7 @@
 var Router = require('@koa/router')
 var mysql = require('mysql')
 
-//connect MySQL
-// var connection =mysql.createConnection({
-//     host:'localhost',
-//     user: 'root',
-//     password: '',
-//     database: 'bartonweb'
-// })
 
-// connection.connect(function(err) {
-//   if (err) {
-//     console.error('error connecting: ' + err.stack);
-//     return;
-//   }
-
-//   console.log('connected as id ' + connection.threadId);
-// })
-
-// connection.query('SELECT * FROM projects', function (error, results, fields) {
-//   if (error) throw error;
-
-//   projects=projects.length>results.length?projects:results;
-//   console.log('The solution is: ', projects);
-// });
-
-// connection.end();
 
 let projects = [
   {
