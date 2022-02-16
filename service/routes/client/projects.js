@@ -8,7 +8,7 @@ let projects = [
     "id": 1,
     "title": "Serene Project",
     "type": "commercial",
-    "link": "http://serene.tk",
+    "link": "#",
     "photo": "/images/serene.png",
     "description": "A Web application based on Monash Industry project."
   },
@@ -16,7 +16,7 @@ let projects = [
     "id": 2,
     "title": "Timber Floor Centre Project",
     "type": "commercial ecommerce",
-    "link": "https://www.timberfloorcentre.com.au",
+    "link": "#",
     "photo": "/images/timber_floor_center.png",
     "description": "A Commercial project with various eCommerce features."
   },
@@ -32,7 +32,7 @@ let projects = [
     "id": 4,
     "title": "TFC Commercial Project",
     "type": "commercial ecommerce",
-    "link": "https://www.tfccommercial.com.au",
+    "link": "#",
     "photo": "./images/tfc_commercial.png",
     "description": "A Commercial Web application project with basic e-commerce features."
   },
