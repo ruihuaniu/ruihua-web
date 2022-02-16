@@ -41,7 +41,7 @@ const Data = () => {
     return (
         <div>
             <Head>
-                <title>Barton-Outstanding Full Stack Developer</title>
+                <title>Ruihua-Outstanding Front End / Full Stack Developer</title>
                 <link rel="icon" href="/images/icon.png" />
             </Head>
             <Header />
@@ -89,7 +89,7 @@ const Data = () => {
                                       <img src="/images/serene.png" />
                */}
 
-               
+
             </div>
             <style jsx>{`
             //    .container{                

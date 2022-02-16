@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Barton-Outstanding Front End Developer</title>
+        <title>Ruihua-Outstanding Front End / Full Stack Developer</title>
         <link rel="icon" href="/images/icon.png" />
       </Head>
       <Header />

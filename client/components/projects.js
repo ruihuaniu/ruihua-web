@@ -54,9 +54,9 @@ const Projects = () => {
         },
         {
             "id": 5,
-            "title": "Barton web Project",
+            "title": "Ruihua web Project",
             "type": "personal",
-            "link": "https://github.com/BartonNIU/barton-web",
+            "link": "https://github.com/ruihuaniu/ruihua-web",
             "photo": "/images/barton_web.png",
             "description": "A React / Next.js with Node.js project. RESTful APIs"
         },

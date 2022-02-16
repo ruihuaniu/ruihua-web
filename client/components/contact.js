@@ -58,12 +58,12 @@ const Contact = () => {
                     <Col xs={{ span: 24 }} sm={{ span: 8 }}>
                         <PhoneOutlined style={{ fontSize: '25px' }} />
                         <p>Phone</p>
-                        <a href="tel:0481 951 268">(+61) 481 951 268</a>
+                        <a href="tel:0481 951 268">(+61) 000 000 000</a>
                     </Col>
                     <Col xs={{ span: 24 }} sm={{ span: 8 }}>
                         <MailOutlined style={{ fontSize: '25px' }} />
                         <p>Email</p>
-                        <a href="mailto:barton.niu@gmail.com">barton.niu@gmail.com</a>
+                        <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
                     </Col>
                 </Row>
             </div>

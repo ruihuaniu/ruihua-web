@@ -8,29 +8,18 @@ const Footer = () => {
     return (
         <div className="footer-container">
             <Row gutter={24}>
-                <Col xs={{ span: 24 }} sm={{ span: 24}}>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }}>
                     <div className="footer-container-left">
                         {/* <h4>FOLLOW ME</h4> */}
-                        <a href="https://www.linkedin.com/in/barton-niu" target="_blank"><LinkedinOutlined /></a>
-                        <a href="https://github.com/BartonNIU/barton-web" target="_blank"><GithubOutlined /></a>
-                        {/* <p>Languages & Libraries used: React, Node.js, <a href="https://github.com/BartonNIU/barton-web">more...</a></p> */}
+                        <a href="https://www.linkedin.com/in/ruihua-niu" target="_blank"><LinkedinOutlined /></a>
+                        <a href="https://github.com/ruihuaniu/ruihua-web" target="_blank"><GithubOutlined /></a>
+
                     </div>
                 </Col>
-                {/* <Col xs={{ span: 24 }} sm={{ span: 12 }}>
-                    <div className="footer-container-right">
-                        <span>Languages & Libraries used: React, Node.js, <a href="https://github.com/BartonNIU/barton-web">more...</a></span>
-                        {/* <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li><a href="https://github.com/BartonNIU/barton-web">more...</a></li>
-                            
-                        </ul>
-                    </div>
-                </Col> */} 
 
             </Row>
-            <div className="footer-description">This site is developed with React and Node.js. <a href="https://github.com/BartonNIU/barton-web" target="_blank">Click here to see more details</a></div>
-            <div className="footer-copyright">@Copyright 2020 Barton All Rights Reserved</div>
+            <div className="footer-description">This site is developed with React and Node.js. <a href="https://github.com/ruihuaniu/ruihua-web" target="_blank">Click here to see more details</a></div>
+            <div className="footer-copyright">{`@Copyright ${new Date().getFullYear()} Ruihua All Rights Reserved`}</div>
 
 
             <style jsx>{`

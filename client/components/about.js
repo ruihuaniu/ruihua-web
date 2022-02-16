@@ -15,7 +15,7 @@ const About = () => {
                         <Col xs={{ span: 24 }} md={{ span: 5 }} >
                             <div className="about-left">
                                 <p className="about-left-upper">Good team player, problem solver</p>
-                                <p className="about-left-lower">I'm Ruihua (Barton) NIU</p>
+                                <p className="about-left-lower">I'm Ruihua NIU</p>
                             </div>
                         </Col>
                         <Col xs={{ span: 24 }} md={{ span: 19 }} >

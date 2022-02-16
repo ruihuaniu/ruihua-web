@@ -1,6 +1,6 @@
-# Barton Web Project
+# Ruihua Web Project
 
-> [Live Demo](https://bartonweb.web.app/)
+> [Live Demo](https://ruihua.vercel.app//)
 
 ### Web Application Structure
 

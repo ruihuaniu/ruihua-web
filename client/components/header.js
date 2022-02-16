@@ -9,8 +9,8 @@ const Header = () => (
     <div className="header">
         <Row >
             <Col xs={20} sm={12} md={12} lg={12} xl={12}>
-                <span className="header-logo">Barton</span>
-                <span className="header-text">Outstanding Front End Developer</span>
+                <span className="header-logo">Ruihua</span>
+                <span className="header-text">Outstanding Front End / Full Stack Developer</span>
             </Col>
             <Col xs={4} sm={12} md={12} lg={12} xl={12}>
                 <Menu mode="horizontal">
